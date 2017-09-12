@@ -1,4 +1,4 @@
-# Non-root docker container
+# mapped-uid-docker container
 
 A basic container that matches your userid / groupid inside the container at
 runtime.
@@ -36,7 +36,7 @@ docker run --rm -it \
     -v `mktemp`:/tim:ro \
     -v `pwd`:/code \
     -w /code \
-    tim-alpine \
+    graham42/mapped-uid-docker \
     echo "did it work" > somefile
 ```
 
