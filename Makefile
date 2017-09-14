@@ -3,8 +3,8 @@
 all: alpine ubuntu
 
 alpine:
-	docker build -t mapped-uid-docker:alpine -f alpine/Dockerfile .
-	docker build -t mapped-uid-docker:latest -f alpine/Dockerfile .
+	docker build -t mapped-uid-docker:alpine -f Dockerfile.alpine .
+	docker build -t mapped-uid-docker:latest -f Dockerfile.alpine .
 
 ubuntu:
-	docker build -t mapped-uid-docker:ubuntu -f ubuntu/Dockerfile .
+	docker build -t mapped-uid-docker:ubuntu -f Dockerfile.ubuntu .
